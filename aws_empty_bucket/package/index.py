@@ -1,16 +1,17 @@
 import json
-import cfnresponse
 import boto3
 import botocore
 import logging
 
 from botocore.exceptions import ClientError
 
-
 try:
     from aws_empty_bucket.package.action import Action
+    from aws_empty_bucket.package import cfnresponse
 except ImportError:
     # Lambda specific import.
+    # noinspection PyUnresolvedReferences
+    import cfnresponse
     # noinspection PyUnresolvedReferences
     from action import Action
 
