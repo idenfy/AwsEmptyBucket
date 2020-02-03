@@ -1,5 +1,8 @@
 # Release history
 
+#### 2.0.1
+Do not use singleton lambdas since we are using roles for specific buckets.
+
 #### 2.0.0
 Make a custom S3 bucket with inner-file deletion capabilities.
 

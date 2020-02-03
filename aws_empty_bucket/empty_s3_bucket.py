@@ -2,7 +2,7 @@ from typing import Optional, List
 from aws_cdk.aws_cloudformation import CustomResource, CustomResourceProvider, ICustomResourceProvider
 from aws_cdk.aws_iam import Role, CompositePrincipal, ServicePrincipal, PolicyDocument, PolicyStatement, Effect
 from aws_cdk.aws_kms import IKey
-from aws_cdk.aws_lambda import IFunction, Runtime, Code, SingletonFunction
+from aws_cdk.aws_lambda import IFunction, Runtime, Code, Function
 from aws_cdk.aws_s3 import *
 from aws_cdk.core import Stack, RemovalPolicy, Duration
 from aws_empty_bucket.package import package_root
@@ -108,10 +108,9 @@ class EmptyS3Bucket(Bucket):
             managed_policies=[]
         )
 
-        self.__custom_backend = SingletonFunction(
+        self.__custom_backend = Function(
             scope=scope,
             id=bucket_name + 'Backend',
-            uuid='CustomResourceSingletonFunctionBackendToDeleteInnerContentsForS3Bucket',
             code=Code.from_asset(
                 path=package_root
             ),
