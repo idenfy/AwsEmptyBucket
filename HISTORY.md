@@ -1,5 +1,8 @@
 # Release history
 
+#### 2.1.0
+Dependencies update.
+
 #### 2.0.1
 Do not use singleton lambdas since we are using roles for specific buckets.
 

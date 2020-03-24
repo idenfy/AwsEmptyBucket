@@ -8,7 +8,7 @@ with open('HISTORY.md') as history_file:
 
 setup(
     name='aws_empty_bucket',
-    version='2.0.1',
+    version='2.1.0',
     license='GNU GENERAL PUBLIC LICENSE Version 3',
     packages=find_packages(exclude=['venv', 'test']),
     description=(
@@ -18,11 +18,11 @@ setup(
     long_description_content_type="text/markdown",
     include_package_data=True,
     install_requires=[
-        'aws_cdk.core',
-        'aws_cdk.aws_iam',
-        'aws_cdk.custom_resources',
-        'aws_cdk.aws_s3',
-        'aws_cdk.aws_s3_deployment'
+        'aws_cdk.core>=1.27.0,<1.28.0',
+        'aws_cdk.aws_iam>=1.27.0,<1.28.0',
+        'aws_cdk.custom_resources>=1.27.0,<1.28.0',
+        'aws_cdk.aws_s3>=1.27.0,<1.28.0',
+        'aws_cdk.aws_s3_deployment>=1.27.0,<1.28.0'
     ],
     author='Laimonas Sutkus',
     author_email='laimonas@idenfy.com, laimonas.sutkus@gmail.com',
