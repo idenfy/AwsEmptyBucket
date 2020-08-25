@@ -1,5 +1,8 @@
 # Release history
 
+#### 2.4.0
+Add md files.
+
 #### 2.3.0
 Dependency update 1.60.0 - 2.0.0.
 

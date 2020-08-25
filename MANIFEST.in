@@ -1,4 +1,5 @@
 include *.txt
+include *.md
 recursive-include aws_empty_bucket *.py
 recursive-include aws_empty_bucket *.zip
 recursive-include aws_empty_bucket *.yml
