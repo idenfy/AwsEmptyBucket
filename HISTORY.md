@@ -1,5 +1,8 @@
 # Release history
 
+#### 2.3.0
+Dependency update 1.60.0 - 2.0.0.
+
 #### 2.2.0
 Force AWS CDK dependency update to 1.44.0.
 
